@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixel Art</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            overflow-x:hidden;
+        }
+        .custom h1{
+            font-weight:bold;
+            letter-spacing:10px;
+            padding:10px;
+            color:#02b4ba;
+        }
+        h2 {
+            font-weight: bold;
+            color: #02b4ba;
+        }
+        .customArea {
+            margin: 10px auto;
+            padding:10px;
+        }
+        .customArea label{
+            text-align:center;
+            margin:10px auto;
+            display:block;
+            color:#02b4ba;
+        }
+        .customArea #custom{
+            display:block;
+            margin:10px auto;
+        }
+        #table,tr,td{
+            border:1px solid black;
+        }
+        tr{
+            height:20px;
+        }
+        td{
+            width:20px;
+            
+        }
+    </style>
+</head>
+<body>
+    <section class="custom">
+        <div class="container text-center">
+            <h1>Pixel Art</h1>
+            <div class="row">
+                
+                <div class="customArea">
+                    <h2>select width && height</h2>
+                            <label>width</label>
+                            <input type="number" id="width" min="0" value="0" />
+                            <label>height</label>
+                            <input type="number" id="height" min="0" value="0" />
+                            <input type="submit" id="custom" value="custom" class="btn btn-outline-info" onsubmit="return false;" />
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="customArea">
+                            <h2>select color</h2>
+                            <label>color</label>
+                            <input type="color" id="color" />
+                        </div>
+                    </div>
+
+                </div>
+    </section>
+    <section class="grid">
+        <div class="row">
+            <div class="customArea">
+                <table id="table">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <script src="js/pixelArt.js"></script>
+</body>
+</html>
